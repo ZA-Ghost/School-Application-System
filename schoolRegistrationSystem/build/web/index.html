@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+      <h2> Student Information </h2>
+      <br>
+    <form action="addStudentDetailsProcess.jsp" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+      </div>
+
+      <div class="form-group">
+        <label for="identity_number">Identity Number:</label>
+        <input type="number" id="identity_number" name="identity_number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Please select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ethnicity">Ethnicity:</label>
+        <select id="ethnicity" name="ethnicity" required>
+          <option value="">Please select</option>
+          <option value="black">Black</option>
+          <option value="coloured">Coloured</option>
+          <option value="white">White</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="grade">Grade:</label>
+        <select id="grade" name="grade" required>
+          <option value="">Please select</option>
+          <option value="grade8">Grade 8</option>
+          <option value="grade9">Grade 9</option>
+          <option value="grade10">Grade 10</option>
+          <option value="grade11">Grade 11</option>
+          <option value="grade12">Grade 12</option>
+        </select>
+      </div>
+        <br>
+      <h2>Current Residence Information</h2>
+      <br>
+      <div class="form-group">
+        <label for="street_name">Street Name:</label>
+        <input type="text" id="street_name" name="street_name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="suburb">Suburb:</label>
+        <input type="text" id="suburb" name="suburb" required>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+
+      <div class="form-group">
+        <label for="province">Province:</label>
+        <input type="text" id="province" name="province" required>
+      </div>
+      <br>
+      <h2>Guardian Information</h2>
+      <br>
+      <div class="form-group">
+        <label for="guardian_name">Name:</label>
+        <input type="text" id="guardian_name" name="guardian_name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guardian_surname">Surname:</label>
+        <input type="text" id="guardian_surname" name="guardian_surname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guardian_number">Number:</label>
+        <input type="text" id="guardian_number" name="guardian_number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guardian_email">Email Address:</label>
+        <input type="email" id="guardian_email" name="guardian_email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="relationship">Relationship:</label>
+        <select id="relationship" name="relationship" required>
+          <option value="">Please select</option>
+          <option value="mother">Mother</option>
+          <option value="father">Father</option>
+          <option value="relative">Relative</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+      <br>
+      <center><p><a href="login.jsp">Staff Login</a></p></center
+  </div>
+</body>
+</html>
